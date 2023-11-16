@@ -1,0 +1,49 @@
+input[type="checkbox"], input[type="radio"]{
+    display: inline-block;
+    margin-right: 100px;
+  }
+  label{
+    display: inline-block;
+    margin-right: 70px;
+  }
+  .name, .mail, .password, .confirm-password, .range, .country, .submit{
+    width: 400px;
+  }
+  input {
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+  }
+  input:focus {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+  }
+  label {
+    font-size: 10px;
+    font-weight: bold;
+    margin: 5px;
+    margin-right: 60px;
+  }
+  .register {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #CCFFE5;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    width: 500px;
+  }
+  input[type="submit"]:hover{
+    background-color: #006400;
+  }
+  #password-error {
+    color: red;
+  }
+  body{
+    background-color: #CCE5FF;
+  }

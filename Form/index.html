@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <form class="register" onsubmit="return validatePassword()">
+      <h1>Form</h1>
+      <label for="name">Name:</label><br />
+      <input
+        class="name"
+        type="text"
+        id="fname"
+        name="fname"
+        minlength="3"
+      /><br />
+
+      <label for="email">Email:</label><br />
+      <input class="mail" type="email" id="email" name="email" /><br />
+
+      <label for="password">Password:</label><br />
+      <input class="password" type="password" id="password" /><br />
+
+      <label for="confirm-password">Confirm Password:</label><br />
+      <input
+        class="confirm-password"
+        type="password"
+        id="confirm-password"
+      /><br />
+      <div id="password-error"></div>
+
+      <label for="radio">Gender:</label><br />
+      <input type="radio" id="male" name="male" value="HTML" />
+      <input type="radio" id="female" name="male" value="HTML" />
+      <input type="radio" id="other" name="male" value="HTML" /><br />
+
+      <label for="radio">Male</label>
+      <label for="radio">Female</label>
+      <label for="radio">Other</label><br />
+
+      <label for="checkbox">Interests:</label><br />
+      <input type="checkbox" id="sports" name="interest" value="HTML" />
+      <input type="checkbox" id="music" name="interest" value="HTML" />
+      <input type="checkbox" id="travel" name="interest" value="HTML" /><br />
+
+      <label class="label1" for="checkbox">Sports</label>
+      <label class="label1" for="checkbox">Music</label>
+      <label class="label1" for="checkbox">Travel</label><br />
+
+      <label for="country">Country:</label><br />
+      <select class="country" id="country">
+        <option value="volvo">USA</option>
+        <option value="saab">Canada</option>
+        <option value="mercedes">Brazil</option>
+        <option value="audi">Portugal</option></select
+      ><br />
+
+      <label for="range-input">Select a number:</label><br />
+
+      <input
+        class="range"
+        type="range"
+        id="range-input"
+        name="range-input"
+        min="0"
+        max="100"
+        oninput="rangeValue.innerText = this.value"
+      /><br />
+      <p class="rangevalue" id="rangeValue">50</p>
+      <br /><input class="submit" type="submit" value="submit" />
+    </form>
+  </body>
+</html>
